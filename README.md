@@ -26,9 +26,19 @@ Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
 
-Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+Explain how a blockchain is structured - Blockchain starts with a genesis block. Once the proof of work matches the valid proof, a new block is hashed and added to the chain. In blockchain each transaction is stored in the current block and is not solidified until that block is mined and a new (last block) is added to the chain.
+
+
+What are the blocks, what is the chain? -  A block is a list of all transactions made during the time that block is the last block in the chain. A chain is a hash that links blocks together. The hash in the blockchain is created from the data that is in the previous block.
+
+
+How is the data organized? - Each block contains the hash of the previous block which allows them to link together in order starting with the genesis (first) block. All transactions made during the time of the last block is stored in that block and then once a new block becomes the last block any new transactions will go there and so on.
  
-Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+Explain how proof of work functions. - Proof of work is an algorithm that confirms transactions and creates new blocks on the chain.
+How does it operate. -  Nodes (miners) compete to solve a mathmatical calculation in order to provide accurate proof and add the next block to the chain.
+How does this protect the chain from attack. 
+What kind of attack is possible? - 51% attack could allows a someone to take control of the chain and give them the opportunity to change blocks
+
 
 ## Project Set Up
 
